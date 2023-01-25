@@ -9,4 +9,6 @@ target 'RandomFoto' do
 
 pod 'UnsplashPhotoPicker', '~> 1.3'
 
+pod 'SDWebImage', '~> 5.0'
+
 end
