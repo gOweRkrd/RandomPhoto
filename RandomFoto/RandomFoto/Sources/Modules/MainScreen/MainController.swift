@@ -46,27 +46,12 @@ final class MainController: UIViewController, UICollectionViewDelegate {
         view.backgroundColor = .white
     }
     
-    // MARK: - NavigationItems action
+    // MARK: - Public Methods
     
-    @objc private func addBarButtonTapped() {
-        print(#function)
-    }
-    
-    @objc private func actionBarButtonTapped(sender: UIBarButtonItem) {
-        print(#function)
-        
-        let shareController = UIActivityViewController(activityItems: selectedImages, applicationActivities: nil)
-        
-        
-        shareController.completionWithItemsHandler = { _, bool, _, _ in
-            if bool {
-                self.refresh()
-            }
-        }
-        
-        shareController.popoverPresentationController?.barButtonItem = sender
-        shareController.popoverPresentationController?.permittedArrowDirections = .any
-        present(shareController, animated: true, completion: nil)
+    func refresh() {
+        self.selectedImages.removeAll()
+        self.mainView.collectionView.selectItem(at: nil, animated: true, scrollPosition: [])
+        undateNavButtonsState()
     }
     
     // MARK: - Private Methods
@@ -102,13 +87,29 @@ final class MainController: UIViewController, UICollectionViewDelegate {
         addBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
         actionBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
     }
+ 
+    // MARK: - NavigationItems action
     
-    func refresh() {
-        self.selectedImages.removeAll()
-        self.mainView.collectionView.selectItem(at: nil, animated: true, scrollPosition: [])
-        undateNavButtonsState()
+    @objc private func addBarButtonTapped() {
+        print(#function)
     }
-
+    
+    @objc private func actionBarButtonTapped(sender: UIBarButtonItem) {
+        print(#function)
+        
+        let shareController = UIActivityViewController(activityItems: selectedImages, applicationActivities: nil)
+        
+        
+        shareController.completionWithItemsHandler = { _, bool, _, _ in
+            if bool {
+                self.refresh()
+            }
+        }
+        
+        shareController.popoverPresentationController?.barButtonItem = sender
+        shareController.popoverPresentationController?.permittedArrowDirections = .any
+        present(shareController, animated: true, completion: nil)
+    }
 }
 
 // MARK: - CollectionViewDataSource
@@ -191,7 +192,7 @@ extension MainController: UISearchBarDelegate {
                 guard let fetchedPhotos = searchResults else { return }
                 self?.photos = fetchedPhotos.results
                 self?.mainView.collectionView.reloadData()
-//                self?.refresh()
+                self?.refresh()
             }
         })
     }
