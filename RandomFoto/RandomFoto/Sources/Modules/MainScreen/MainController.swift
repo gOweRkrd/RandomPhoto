@@ -37,6 +37,7 @@ final class MainController: UIViewController, UICollectionViewDelegate {
         super.loadView()
         self.view = mainView
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

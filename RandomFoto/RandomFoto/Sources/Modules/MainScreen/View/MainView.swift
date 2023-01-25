@@ -58,10 +58,3 @@ extension MainView {
         ])
     }
 }
-
-// MARK: - Constant Constrains
-
-private extension CGFloat {
-    static let leadingMargin: CGFloat = 10
-    
-}
