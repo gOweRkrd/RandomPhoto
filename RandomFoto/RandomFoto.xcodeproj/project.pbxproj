@@ -25,6 +25,7 @@
 		50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */; };
 		50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */; };
 		50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB5229812C0E005EC3E6 /* SearchResults.swift */; };
+		50FBDB5729814428005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */; };
 		E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		50FBDB5229812C0E005EC3E6 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.release.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,17 +218,10 @@
 		50C61D3B297FCBFC005EE0BE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50C61D3C297FCC01005EE0BE /* Cell */,
+				50FBDB582981444D005EC3E6 /* Cell */,
 				50C61D41297FCC8D005EE0BE /* FavoritiesView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		50C61D3C297FCC01005EE0BE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		50C61D3D297FCC07005EE0BE /* Controller */ = {
@@ -292,6 +287,14 @@
 				50FBDB5229812C0E005EC3E6 /* SearchResults.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		50FBDB582981444D005EC3E6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		68F3524A3E5AF481DA0A821B /* Frameworks */ = {
@@ -440,6 +443,7 @@
 				50C61D39297FCAE3005EE0BE /* MainView.swift in Sources */,
 				50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */,
 				50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */,
+				50FBDB5729814428005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */,
 				50C61D18297FC7CD005EE0BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
