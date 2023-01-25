@@ -22,6 +22,9 @@
 		50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */; };
 		50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB48298127A2005EC3E6 /* TabBarController.swift */; };
 		50FBDB4C298127EF005EC3E6 /* UIColorExtension+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */; };
+		50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */; };
+		50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */; };
+		50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB5229812C0E005EC3E6 /* SearchResults.swift */; };
 		E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,9 @@
 		50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionDataModel.swift; sourceTree = "<group>"; };
 		50FBDB48298127A2005EC3E6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColorExtension+TabBar.swift"; sourceTree = "<group>"; };
+		50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		50FBDB5229812C0E005EC3E6 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.release.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				50C61D34297FCA88005EE0BE /* NetworkLayer */,
+				50FBDB5129812BF4005EC3E6 /* Models */,
 				50C61D33297FCA57005EE0BE /* StorageLayer */,
 			);
 			path = Services;
@@ -167,6 +174,8 @@
 		50C61D34297FCA88005EE0BE /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */,
+				50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -275,6 +284,14 @@
 				50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50FBDB5129812BF4005EC3E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50FBDB5229812C0E005EC3E6 /* SearchResults.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		68F3524A3E5AF481DA0A821B /* Frameworks */ = {
@@ -414,8 +431,11 @@
 				50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */,
 				50C61D44297FCCB4005EE0BE /* FavoritiesController.swift in Sources */,
 				50C61D46297FCCDF005EE0BE /* DeatailView.swift in Sources */,
+				50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */,
+				50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */,
 				50C61D1A297FC7CD005EE0BE /* MainController.swift in Sources */,
 				50C61D4B297FD4C2005EE0BE /* CollectionViewCell.swift in Sources */,
+				50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */,
 				50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */,
 				50C61D39297FCAE3005EE0BE /* MainView.swift in Sources */,
 				50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */,

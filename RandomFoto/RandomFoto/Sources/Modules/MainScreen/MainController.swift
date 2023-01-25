@@ -12,6 +12,7 @@ final class MainController: UIViewController, UISearchBarDelegate, UICollectionV
     // MARK: - Properties
     
     private let mainView = MainView()
+    private var photos = [UnsplashPhoto]()
     
     // MARK: - Lifecycle
     
@@ -31,9 +32,7 @@ final class MainController: UIViewController, UISearchBarDelegate, UICollectionV
     // MARK: - Private Methods
     
     private func setupNavigationItem() {
-        navigationItem.title = "Random Foto"
-        navigationItem.hidesBackButton = true
-        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.title = "RANDOM FOTO"
     }
     
     private func setupSearchBar() {
