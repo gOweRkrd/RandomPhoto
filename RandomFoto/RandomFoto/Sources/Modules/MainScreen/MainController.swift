@@ -32,6 +32,8 @@ final class MainController: UIViewController, UISearchBarDelegate, UICollectionV
     
     private func setupNavigationItem() {
         navigationItem.title = "Random Foto"
+        navigationItem.hidesBackButton = true
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     private func setupSearchBar() {

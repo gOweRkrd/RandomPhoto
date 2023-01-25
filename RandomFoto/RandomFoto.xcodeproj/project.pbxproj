@@ -20,6 +20,8 @@
 		50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D47297FCD0C005EE0BE /* DetailController.swift */; };
 		50C61D4B297FD4C2005EE0BE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D4A297FD4C2005EE0BE /* CollectionViewCell.swift */; };
 		50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */; };
+		50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB48298127A2005EC3E6 /* TabBarController.swift */; };
+		50FBDB4C298127EF005EC3E6 /* UIColorExtension+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */; };
 		E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		50C61D47297FCD0C005EE0BE /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		50C61D4A297FD4C2005EE0BE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionDataModel.swift; sourceTree = "<group>"; };
+		50FBDB48298127A2005EC3E6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColorExtension+TabBar.swift"; sourceTree = "<group>"; };
 		B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.release.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +141,8 @@
 				50C61D2E297FC8B3005EE0BE /* MainScreen */,
 				50C61D3A297FCBAE005EE0BE /* FavoritesScreen */,
 				50C61D3E297FCC44005EE0BE /* DetailScreen */,
+				50FBDB4729812765005EC3E6 /* TabBar */,
+				50FBDB4A298127CD005EC3E6 /* Extensions */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -255,6 +261,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		50FBDB4729812765005EC3E6 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				50FBDB48298127A2005EC3E6 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		50FBDB4A298127CD005EC3E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		68F3524A3E5AF481DA0A821B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,7 +291,6 @@
 				DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */,
 				B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -388,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C61D42297FCC8D005EE0BE /* FavoritiesView.swift in Sources */,
+				50FBDB4C298127EF005EC3E6 /* UIColorExtension+TabBar.swift in Sources */,
 				50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */,
 				50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */,
 				50C61D44297FCCB4005EE0BE /* FavoritiesController.swift in Sources */,
@@ -396,6 +418,7 @@
 				50C61D4B297FD4C2005EE0BE /* CollectionViewCell.swift in Sources */,
 				50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */,
 				50C61D39297FCAE3005EE0BE /* MainView.swift in Sources */,
+				50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */,
 				50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */,
 				50C61D18297FC7CD005EE0BE /* SceneDelegate.swift in Sources */,
 			);
