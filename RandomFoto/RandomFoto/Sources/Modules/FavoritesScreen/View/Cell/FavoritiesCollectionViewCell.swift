@@ -1,16 +1,8 @@
-//
-//  GalleryCollectionViewCell.swift
-//  IPhotosV2
-//
-//  Created by Алексей Пархоменко on 27/07/2019.
-//  Copyright © 2019 Алексей Пархоменко. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import SDWebImage
 
-class FavoritiesCollectionViewCell: UICollectionViewCell {
+final class FavoritiesCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     
@@ -18,7 +10,7 @@ class FavoritiesCollectionViewCell: UICollectionViewCell {
     
     var unsplashPhoto: UnsplashPhoto! {
         didSet {
-            let photoUrl = unsplashPhoto.urls["regular"] // спорный момент, лично для меня
+            let photoUrl = unsplashPhoto.urls["regular"]
             guard let imageUrl = photoUrl, let url = URL(string: imageUrl) else { return }
             myImageView.sd_setImage(with: url, completed: nil)
         }
@@ -27,7 +19,7 @@ class FavoritiesCollectionViewCell: UICollectionViewCell {
     // MARK: - UI Elements
     
     var myImageView: UIImageView = {
-        let imageView = UIImageView()
+       let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -37,16 +29,10 @@ class FavoritiesCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Lifecycle
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        myImageView.image = nil
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+    
         backgroundColor = .green
-        
         addSubView()
         setupConstraints()
     }
@@ -62,19 +48,24 @@ class FavoritiesCollectionViewCell: UICollectionViewCell {
         guard let photoURL = photoUrl, let url = URL(string: photoURL) else { return }
         myImageView.sd_setImage(with: url, completed: nil)
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        myImageView.image = nil
+    }
 }
-
 
 // MARK: - Setup Constrains
 
 extension FavoritiesCollectionViewCell {
     
-    func addSubView() {
+    private func addSubView() {
+        
         addSubview(myImageView)
         myImageView.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             
             myImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
@@ -84,4 +75,5 @@ extension FavoritiesCollectionViewCell {
         ])
     }
 }
+
 

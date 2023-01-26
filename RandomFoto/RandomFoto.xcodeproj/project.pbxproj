@@ -9,23 +9,20 @@
 /* Begin PBXBuildFile section */
 		50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D15297FC7CD005EE0BE /* AppDelegate.swift */; };
 		50C61D18297FC7CD005EE0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D17297FC7CD005EE0BE /* SceneDelegate.swift */; };
-		50C61D1A297FC7CD005EE0BE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D19297FC7CD005EE0BE /* MainController.swift */; };
 		50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D1E297FC7CD005EE0BE /* RandomFoto.xcdatamodeld */; };
 		50C61D22297FC7CF005EE0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C61D21297FC7CF005EE0BE /* Assets.xcassets */; };
 		50C61D25297FC7CF005EE0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C61D23297FC7CF005EE0BE /* LaunchScreen.storyboard */; };
-		50C61D39297FCAE3005EE0BE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D38297FCAE3005EE0BE /* MainView.swift */; };
-		50C61D42297FCC8D005EE0BE /* FavoritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D41297FCC8D005EE0BE /* FavoritiesView.swift */; };
-		50C61D44297FCCB4005EE0BE /* FavoritiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D43297FCCB4005EE0BE /* FavoritiesController.swift */; };
 		50C61D46297FCCDF005EE0BE /* DeatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D45297FCCDF005EE0BE /* DeatailView.swift */; };
 		50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D47297FCD0C005EE0BE /* DetailController.swift */; };
-		50C61D4B297FD4C2005EE0BE /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D4A297FD4C2005EE0BE /* CollectionViewCell.swift */; };
-		50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */; };
-		50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB48298127A2005EC3E6 /* TabBarController.swift */; };
-		50FBDB4C298127EF005EC3E6 /* UIColorExtension+TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */; };
+		50FBDB4C298127EF005EC3E6 /* UIKit + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4B298127EF005EC3E6 /* UIKit + Extension.swift */; };
 		50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */; };
 		50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */; };
 		50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB5229812C0E005EC3E6 /* SearchResults.swift */; };
-		50FBDB5729814428005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */; };
+		50FBDB6D298276D7005EC3E6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB6C298276D6005EC3E6 /* CollectionViewCell.swift */; };
+		50FBDB702982771B005EC3E6 /* MainFotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB6F2982771B005EC3E6 /* MainFotoController.swift */; };
+		50FBDB722982773A005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB712982773A005EC3E6 /* FavoritiesCollectionViewCell.swift */; };
+		50FBDB742982774F005EC3E6 /* FavoritiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB732982774F005EC3E6 /* FavoritiesController.swift */; };
+		50FBDB7629827763005EC3E6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB7529827763005EC3E6 /* MainTabBarController.swift */; };
 		E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,24 +31,21 @@
 		50C61D12297FC7CD005EE0BE /* RandomFoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C61D15297FC7CD005EE0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C61D17297FC7CD005EE0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50C61D19297FC7CD005EE0BE /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		50C61D1F297FC7CD005EE0BE /* RandomFoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomFoto.xcdatamodel; sourceTree = "<group>"; };
 		50C61D21297FC7CF005EE0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C61D24297FC7CF005EE0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C61D26297FC7CF005EE0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50C61D38297FCAE3005EE0BE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		50C61D41297FCC8D005EE0BE /* FavoritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritiesView.swift; sourceTree = "<group>"; };
-		50C61D43297FCCB4005EE0BE /* FavoritiesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritiesController.swift; sourceTree = "<group>"; };
 		50C61D45297FCCDF005EE0BE /* DeatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailView.swift; sourceTree = "<group>"; };
 		50C61D47297FCD0C005EE0BE /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
-		50C61D4A297FD4C2005EE0BE /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColletionDataModel.swift; sourceTree = "<group>"; };
-		50FBDB48298127A2005EC3E6 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColorExtension+TabBar.swift"; sourceTree = "<group>"; };
+		50FBDB4B298127EF005EC3E6 /* UIKit + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit + Extension.swift"; sourceTree = "<group>"; };
 		50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		50FBDB5229812C0E005EC3E6 /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
-		50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		50FBDB6C298276D6005EC3E6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		50FBDB6F2982771B005EC3E6 /* MainFotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFotoController.swift; sourceTree = "<group>"; };
+		50FBDB712982773A005EC3E6 /* FavoritiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		50FBDB732982774F005EC3E6 /* FavoritiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritiesController.swift; sourceTree = "<group>"; };
+		50FBDB7529827763005EC3E6 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.release.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,10 +112,8 @@
 		50C61D2E297FC8B3005EE0BE /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				50C61D37297FCAC9005EE0BE /* Model */,
 				50C61D35297FCAAB005EE0BE /* View */,
-				50C61D36297FCAB2005EE0BE /* Controller */,
-				50C61D19297FC7CD005EE0BE /* MainController.swift */,
+				50FBDB6E298276E7005EC3E6 /* Controller */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -186,24 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				50C61D49297FD4B3005EE0BE /* Cell */,
-				50C61D38297FCAE3005EE0BE /* MainView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		50C61D36297FCAB2005EE0BE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		50C61D37297FCAC9005EE0BE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				50C61D4C297FD51E005EE0BE /* ColletionDataModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		50C61D3A297FCBAE005EE0BE /* FavoritesScreen */ = {
@@ -219,7 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				50FBDB582981444D005EC3E6 /* Cell */,
-				50C61D41297FCC8D005EE0BE /* FavoritiesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,7 +202,7 @@
 		50C61D3D297FCC07005EE0BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				50C61D43297FCCB4005EE0BE /* FavoritiesController.swift */,
+				50FBDB732982774F005EC3E6 /* FavoritiesController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,7 +235,7 @@
 		50C61D49297FD4B3005EE0BE /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				50C61D4A297FD4C2005EE0BE /* CollectionViewCell.swift */,
+				50FBDB6C298276D6005EC3E6 /* CollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -268,7 +243,7 @@
 		50FBDB4729812765005EC3E6 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				50FBDB48298127A2005EC3E6 /* TabBarController.swift */,
+				50FBDB7529827763005EC3E6 /* MainTabBarController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -276,7 +251,7 @@
 		50FBDB4A298127CD005EC3E6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				50FBDB4B298127EF005EC3E6 /* UIColorExtension+TabBar.swift */,
+				50FBDB4B298127EF005EC3E6 /* UIKit + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -292,9 +267,17 @@
 		50FBDB582981444D005EC3E6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				50FBDB5629814428005EC3E6 /* FavoritiesCollectionViewCell.swift */,
+				50FBDB712982773A005EC3E6 /* FavoritiesCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		50FBDB6E298276E7005EC3E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50FBDB6F2982771B005EC3E6 /* MainFotoController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		68F3524A3E5AF481DA0A821B /* Frameworks */ = {
@@ -428,22 +411,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C61D42297FCC8D005EE0BE /* FavoritiesView.swift in Sources */,
-				50FBDB4C298127EF005EC3E6 /* UIColorExtension+TabBar.swift in Sources */,
+				50FBDB4C298127EF005EC3E6 /* UIKit + Extension.swift in Sources */,
 				50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */,
-				50C61D4D297FD51E005EE0BE /* ColletionDataModel.swift in Sources */,
-				50C61D44297FCCB4005EE0BE /* FavoritiesController.swift in Sources */,
 				50C61D46297FCCDF005EE0BE /* DeatailView.swift in Sources */,
 				50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */,
 				50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */,
-				50C61D1A297FC7CD005EE0BE /* MainController.swift in Sources */,
-				50C61D4B297FD4C2005EE0BE /* CollectionViewCell.swift in Sources */,
 				50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */,
 				50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */,
-				50C61D39297FCAE3005EE0BE /* MainView.swift in Sources */,
-				50FBDB49298127A2005EC3E6 /* TabBarController.swift in Sources */,
+				50FBDB6D298276D7005EC3E6 /* CollectionViewCell.swift in Sources */,
+				50FBDB742982774F005EC3E6 /* FavoritiesController.swift in Sources */,
 				50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */,
-				50FBDB5729814428005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */,
+				50FBDB7629827763005EC3E6 /* MainTabBarController.swift in Sources */,
+				50FBDB702982771B005EC3E6 /* MainFotoController.swift in Sources */,
+				50FBDB722982773A005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */,
 				50C61D18297FC7CD005EE0BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

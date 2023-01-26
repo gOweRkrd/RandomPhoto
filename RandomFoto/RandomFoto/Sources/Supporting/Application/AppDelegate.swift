@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  RandomFoto
-//
-//  Created by Александр Косяков on 24.01.2023.
-//
-
 import UIKit
 import CoreData
 

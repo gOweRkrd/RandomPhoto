@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  RandomFoto
-//
-//  Created by Александр Косяков on 24.01.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -16,7 +9,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        let firstVC = TabBarController()
+        let firstVC = MainTabBarController()
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene

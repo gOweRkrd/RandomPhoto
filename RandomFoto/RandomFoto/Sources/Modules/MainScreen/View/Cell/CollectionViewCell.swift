@@ -1,38 +1,34 @@
-//
-//  MainViewCell.swift
-//  RandomFoto
-//
-//  Created by Александр Косяков on 24.01.2023.
-//
-
 import UIKit
 import SDWebImage
 
-final class CollectionViewCell: UICollectionViewCell {
 
-    var data: ColletionData? {
-        didSet {
-            guard let data = data else { return }
-            imageView.image = data.image
-        }
-    }
+final class CollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - Properties
+    
+    static let reuseId = "PhotosCell"
     
     var unsplashPhoto: UnsplashPhoto! {
         didSet {
             let photoUrl = unsplashPhoto.urls["regular"]
             guard let imageUrl = photoUrl, let url = URL(string: imageUrl) else { return }
-            imageView.sd_setImage(with: url, completed: nil)
+            photoImageView.sd_setImage(with: url, completed: nil)
         }
     }
-
+    
+    override var isSelected: Bool {
+        didSet {
+            updateSelectedState()
+        }
+    }
+    
     // MARK: - UI Elements
-
-     let imageView: UIImageView = {
-
+    
+    let photoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFit
-        imageView.clipsToBounds = true
+        imageView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
@@ -43,62 +39,59 @@ final class CollectionViewCell: UICollectionViewCell {
         imageView.alpha = 0
         return imageView
     }()
-
-    
-    override var isSelected: Bool {
-        didSet {
-            updateSelectedState()
-        }
-    }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        imageView.image = nil
-    }
-    
-    private func updateSelectedState() {
-        imageView.alpha = isSelected ? 0.7 : 1
-        checkmark.alpha = isSelected ? 1 : 0
-    }
     
     // MARK: - Lifecycle
-
+    
     override init(frame: CGRect) {
-        super.init(frame: .zero)
-
+        super.init(frame: frame)
+        
+        updateSelectedState()
         addSubView()
         setupConstraints()
-        updateSelectedState()
+        
     }
-
-    required init?(coder aDecoder: NSCoder) {
+    
+    required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Public Methods
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photoImageView.image = nil
+    }
+    
+    // MARK: - Private Methods
+    
+    private func updateSelectedState() {
+        photoImageView.alpha = isSelected ? 0.7 : 1
+        checkmark.alpha = isSelected ? 1 : 0
     }
 }
 
 // MARK: - Setup Constrains
 
-private extension CollectionViewCell {
-
+extension CollectionViewCell {
+    
     private func addSubView() {
-
-        contentView.addSubview(imageView)
+        
+        contentView.addSubview(photoImageView)
         contentView.addSubview(checkmark)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        photoImageView.translatesAutoresizingMaskIntoConstraints = false
         checkmark.translatesAutoresizingMaskIntoConstraints = false
     }
-
+    
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-
-            imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            imageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
-            imageView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
-            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            checkmark.trailingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: -8),
-            checkmark.bottomAnchor.constraint(equalTo: imageView.bottomAnchor, constant: -8)
-
+            photoImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            photoImageView.leftAnchor.constraint(equalTo: contentView.leftAnchor),
+            photoImageView.rightAnchor.constraint(equalTo: contentView.rightAnchor),
+            photoImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            
+            checkmark.trailingAnchor.constraint(equalTo: photoImageView.trailingAnchor, constant: -8),
+            checkmark.bottomAnchor.constraint(equalTo: photoImageView.bottomAnchor, constant: -8)
         ])
     }
 }

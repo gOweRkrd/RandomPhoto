@@ -1,11 +1,3 @@
-//
-//  SearchResults.swift
-//  PhotosLibrary
-//
-//  Created by Алексей Пархоменко on 18/08/2019.
-//  Copyright © 2019 Алексей Пархоменко. All rights reserved.
-//
-
 import Foundation
 
 struct SearchResults: Decodable {

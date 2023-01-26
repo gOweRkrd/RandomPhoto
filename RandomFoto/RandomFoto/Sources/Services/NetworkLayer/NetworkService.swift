@@ -32,7 +32,7 @@ class NetworkService {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "api.unsplash.com"
-        components.path = "/photos/random"
+        components.path = "/search/photos"
         components.queryItems = params.map { URLQueryItem(name: $0, value: $1)}
         return components.url!
     }
