@@ -109,9 +109,9 @@ final class MainFotoController: UICollectionViewController {
             return mutablePhotos
         })
         
-        let alertController = UIAlertController(title: "", message: "\(selectedPhotos!.count) фото будут добавлены в альбом", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "", message: "\(selectedPhotos!.count) photos will be added to the album", preferredStyle: .alert)
         
-        let add = UIAlertAction(title: "Добавить", style: .default) { (action) in
+        let add = UIAlertAction(title: "Add", style: .default) { (action) in
             let tabbar = self.tabBarController as! MainTabBarController
             let navVC = tabbar.viewControllers?[1] as! UINavigationController
             let likesVC = navVC.topViewController as! FavoritiesController
@@ -122,7 +122,7 @@ final class MainFotoController: UICollectionViewController {
             self.refresh()
         }
         
-        let cancel = UIAlertAction(title: "Отменить", style: .cancel) { (action) in
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
         }
         
         alertController.addAction(cancel)
@@ -242,4 +242,3 @@ extension MainFotoController {
         }
     }
 }
-
