@@ -1,6 +1,6 @@
 import UIKit
 
-class FavoritiesController: UICollectionViewController {
+final class FavoritiesController: UICollectionViewController {
     
     // MARK: - Properties
     

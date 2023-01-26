@@ -1,8 +1,7 @@
 import Foundation
 
-class NetworkService {
+final class NetworkService {
     
-    // построение запроса данных по URL
     func request(searchTerm: String, completion: @escaping (Data?, Error?) -> Void)  {
         
         let parameters = self.prepareParaments(searchTerm: searchTerm)

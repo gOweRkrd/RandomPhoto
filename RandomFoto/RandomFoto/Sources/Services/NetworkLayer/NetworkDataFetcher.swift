@@ -1,6 +1,6 @@
 import Foundation
 
-class NetworkDataFetcher {
+final class NetworkDataFetcher {
     
     var networkService = NetworkService()
     
