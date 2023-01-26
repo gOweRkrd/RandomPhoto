@@ -16,10 +16,16 @@ final class FavoritiesCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    override var isSelected: Bool {
+        didSet {
+            updateSelectedState()
+        }
+    }
+    
     // MARK: - UI Elements
     
     var myImageView: UIImageView = {
-       let imageView = UIImageView()
+        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -27,11 +33,19 @@ final class FavoritiesCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    private let checkmark: UIImageView = {
+        let image = UIImage(named: "bird1")
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.alpha = 0
+        return imageView
+    }()
+    
     // MARK: - Lifecycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         backgroundColor = .green
         addSubView()
         setupConstraints()
@@ -53,6 +67,13 @@ final class FavoritiesCollectionViewCell: UICollectionViewCell {
         super.prepareForReuse()
         myImageView.image = nil
     }
+    
+    // MARK: - Private Methods
+    
+    private func updateSelectedState() {
+        myImageView.alpha = isSelected ? 0.7 : 1
+        checkmark.alpha = isSelected ? 1 : 0
+    }
 }
 
 // MARK: - Setup Constrains
@@ -61,8 +82,10 @@ extension FavoritiesCollectionViewCell {
     
     private func addSubView() {
         
-        addSubview(myImageView)
+        contentView.addSubview(myImageView)
+        contentView.addSubview(checkmark)
         myImageView.translatesAutoresizingMaskIntoConstraints = false
+        checkmark.translatesAutoresizingMaskIntoConstraints = false
     }
     
     private func setupConstraints() {
@@ -71,7 +94,10 @@ extension FavoritiesCollectionViewCell {
             myImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             myImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             myImageView.topAnchor.constraint(equalTo: self.topAnchor),
-            myImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            myImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            
+            checkmark.trailingAnchor.constraint(equalTo: myImageView.trailingAnchor, constant: -8),
+            checkmark.bottomAnchor.constraint(equalTo: myImageView.bottomAnchor, constant: -8)
         ])
     }
 }
