@@ -102,6 +102,3 @@ extension FavoritiesCollectionViewCell {
         ])
     }
 }
-
-
-

@@ -8,9 +8,8 @@ struct SearchResults: Decodable {
 struct UnsplashPhoto: Decodable {
     let width: Int
     let height: Int
-    let urls: [URLKing.RawValue:String]
-    
-    
+    let urls: [URLKing.RawValue: String]
+
     enum URLKing: String {
         case raw
         case full
@@ -19,5 +18,3 @@ struct UnsplashPhoto: Decodable {
         case thumb
     }
 }
-
-

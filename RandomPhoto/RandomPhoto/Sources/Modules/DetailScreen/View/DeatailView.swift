@@ -10,8 +10,7 @@ import UIKit
 final class DeatailView: UIView {
 
     // MARK: - UI Elements
-    
-  
+
     // MARK: - Lifecycle
 
     override init(frame: CGRect) {
@@ -28,12 +27,12 @@ final class DeatailView: UIView {
 // MARK: - Setup Constrains
 
 extension DeatailView {
-    
+
 }
 
 // MARK: - Constant Constrains
 
 private extension CGFloat {
     static let leadingMargin: CGFloat = 10
-    
+
 }

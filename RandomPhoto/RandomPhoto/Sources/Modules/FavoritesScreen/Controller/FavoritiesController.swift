@@ -6,7 +6,7 @@ final class FavoritiesController: UICollectionViewController {
 
     var photos = [UnsplashPhoto]()
     private var selectedImages = [UIImage]()
-    
+
     private var numberOfSelectedPhotosFav: Int {
         return collectionView.indexPathsForSelectedItems?.count ?? 0
     }
@@ -83,18 +83,18 @@ final class FavoritiesController: UICollectionViewController {
         })
 
         let alertController = UIAlertController(title: "", message: "\(selectedPhotos!.count) photos will be deleted from favorites", preferredStyle: .alert)
-        let add = UIAlertAction(title: "Delete", style: .default) { (action) in
+        let add = UIAlertAction(title: "Delete", style: .default) { (_) in
             let tabbar = self.tabBarController as! MainTabBarController
             let navVC = tabbar.viewControllers?[1] as! UINavigationController
             let likesVC = navVC.topViewController as! FavoritiesController
 
             likesVC.photos.append(contentsOf: selectedPhotos ?? [])
             likesVC.collectionView.reloadData()
-            
+
             self.refresh()
         }
 
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
         }
 
         alertController.addAction(cancel)
@@ -154,4 +154,3 @@ extension FavoritiesController {
         enterSearchTermLabel.topAnchor.constraint(equalTo: collectionView.topAnchor, constant: 50).isActive = true
     }
 }
-
