@@ -14,7 +14,6 @@ final class FavoritiesController: UICollectionViewController {
     // MARK: - UI Elements Navigation Bar
 
     private lazy var trashBarButtonItem: UIBarButtonItem = {
-//        return UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: nil)
         return UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(removeBarButtonTapped))
     }()
 
@@ -91,7 +90,7 @@ final class FavoritiesController: UICollectionViewController {
 
             likesVC.photos.append(contentsOf: selectedPhotos ?? [])
             likesVC.collectionView.reloadData()
-
+            
             self.refresh()
         }
 

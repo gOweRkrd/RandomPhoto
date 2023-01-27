@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomFoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50C61D12297FC7CD005EE0BE /* RandomFoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C61D12297FC7CD005EE0BE /* RandomPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C61D15297FC7CD005EE0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C61D17297FC7CD005EE0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		50C61D1F297FC7CD005EE0BE /* RandomFoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomFoto.xcdatamodel; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		50C61D13297FC7CD005EE0BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50C61D12297FC7CD005EE0BE /* RandomFoto.app */,
+				50C61D12297FC7CD005EE0BE /* RandomPhoto.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50C61D11297FC7CD005EE0BE /* RandomFoto */ = {
+		50C61D11297FC7CD005EE0BE /* RandomPhoto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50C61D29297FC7CF005EE0BE /* Build configuration list for PBXNativeTarget "RandomFoto" */;
+			buildConfigurationList = 50C61D29297FC7CF005EE0BE /* Build configuration list for PBXNativeTarget "RandomPhoto" */;
 			buildPhases = (
 				7556CC2AF84CF74302A8A06E /* [CP] Check Pods Manifest.lock */,
 				50C61D0E297FC7CD005EE0BE /* Sources */,
@@ -314,9 +314,9 @@
 			);
 			dependencies = (
 			);
-			name = RandomFoto;
+			name = RandomPhoto;
 			productName = RandomFoto;
-			productReference = 50C61D12297FC7CD005EE0BE /* RandomFoto.app */;
+			productReference = 50C61D12297FC7CD005EE0BE /* RandomPhoto.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -334,7 +334,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 50C61D0D297FC7CD005EE0BE /* Build configuration list for PBXProject "RandomFoto" */;
+			buildConfigurationList = 50C61D0D297FC7CD005EE0BE /* Build configuration list for PBXProject "RandomPhoto" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -347,7 +347,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50C61D11297FC7CD005EE0BE /* RandomFoto */,
+				50C61D11297FC7CD005EE0BE /* RandomPhoto */,
 			);
 		};
 /* End PBXProject section */
@@ -613,7 +613,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50C61D0D297FC7CD005EE0BE /* Build configuration list for PBXProject "RandomFoto" */ = {
+		50C61D0D297FC7CD005EE0BE /* Build configuration list for PBXProject "RandomPhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C61D27297FC7CF005EE0BE /* Debug */,
@@ -622,7 +622,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50C61D29297FC7CF005EE0BE /* Build configuration list for PBXNativeTarget "RandomFoto" */ = {
+		50C61D29297FC7CF005EE0BE /* Build configuration list for PBXNativeTarget "RandomPhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50C61D2A297FC7CF005EE0BE /* Debug */,
