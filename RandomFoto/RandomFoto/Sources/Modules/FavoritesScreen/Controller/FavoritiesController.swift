@@ -60,6 +60,8 @@ final class FavoritiesController: UICollectionViewController {
         collectionView.backgroundColor = .white
         collectionView.register(FavoritiesCollectionViewCell.self, forCellWithReuseIdentifier: FavoritiesCollectionViewCell.reuseId)
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        // permission to select more than one cell
+        collectionView.allowsMultipleSelection = true
     }
 
     private func setupNavigationBar() {

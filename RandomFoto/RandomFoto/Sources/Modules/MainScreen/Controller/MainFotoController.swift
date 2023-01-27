@@ -60,7 +60,7 @@ final class MainFotoController: UICollectionViewController {
     func refresh() {
         self.selectedImages.removeAll()
         self.collectionView.selectItem(at: nil, animated: true, scrollPosition: [])
-        undateNavButtonsState()
+        updateNavButtonsState()
     }
     
     // MARK: - Private Methods
@@ -92,7 +92,7 @@ final class MainFotoController: UICollectionViewController {
         addBarButtonItem.isEnabled = false
     }
     
-    private func undateNavButtonsState() {
+    private func updateNavButtonsState() {
         addBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
         actionBarButtonItem.isEnabled = numberOfSelectedPhotos > 0
     }
@@ -164,7 +164,7 @@ final class MainFotoController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        undateNavButtonsState()
+        updateNavButtonsState()
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         guard let image = cell.photoImageView.image else { return }
         selectedImages.append(image)
@@ -172,7 +172,7 @@ final class MainFotoController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        undateNavButtonsState()
+        updateNavButtonsState()
         let cell = collectionView.cellForItem(at: indexPath) as! CollectionViewCell
         guard let image = cell.photoImageView.image else { return }
         if let index = selectedImages.firstIndex(of: image) {
