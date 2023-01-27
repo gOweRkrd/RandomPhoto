@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8DC424BBD48C7A6D709EEE /* Pods_RandomPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0870B771FD167EFBFF0C87BB /* Pods_RandomPhoto.framework */; };
 		50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D15297FC7CD005EE0BE /* AppDelegate.swift */; };
 		50C61D18297FC7CD005EE0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D17297FC7CD005EE0BE /* SceneDelegate.swift */; };
 		50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D1E297FC7CD005EE0BE /* RandomFoto.xcdatamodeld */; };
@@ -23,11 +24,11 @@
 		50FBDB722982773A005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB712982773A005EC3E6 /* FavoritiesCollectionViewCell.swift */; };
 		50FBDB742982774F005EC3E6 /* FavoritiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB732982774F005EC3E6 /* FavoritiesController.swift */; };
 		50FBDB7629827763005EC3E6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB7529827763005EC3E6 /* MainTabBarController.swift */; };
-		E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomFoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0870B771FD167EFBFF0C87BB /* Pods_RandomPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4936D68396E5D91C2238CF /* Pods-RandomPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPhoto.release.xcconfig"; path = "Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto.release.xcconfig"; sourceTree = "<group>"; };
 		50C61D12297FC7CD005EE0BE /* RandomPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C61D15297FC7CD005EE0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50C61D17297FC7CD005EE0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		50FBDB7529827763005EC3E6 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.release.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.release.xcconfig"; sourceTree = "<group>"; };
 		DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomFoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomFoto/Pods-RandomFoto.debug.xcconfig"; sourceTree = "<group>"; };
+		FADB883D00979D572712B3A6 /* Pods-RandomPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPhoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E895C96A3B24044FAF9C4869 /* Pods_RandomFoto.framework in Frameworks */,
+				0E8DC424BBD48C7A6D709EEE /* Pods_RandomPhoto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +67,7 @@
 		50C61D09297FC7CD005EE0BE = {
 			isa = PBXGroup;
 			children = (
-				50C61D14297FC7CD005EE0BE /* RandomFoto */,
+				50C61D14297FC7CD005EE0BE /* RandomPhoto */,
 				50C61D13297FC7CD005EE0BE /* Products */,
 				B2A9AC607291CC55640549D2 /* Pods */,
 				68F3524A3E5AF481DA0A821B /* Frameworks */,
@@ -80,13 +82,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		50C61D14297FC7CD005EE0BE /* RandomFoto */ = {
+		50C61D14297FC7CD005EE0BE /* RandomPhoto */ = {
 			isa = PBXGroup;
 			children = (
 				50C61D2C297FC874005EE0BE /* Sources */,
 				50C61D2D297FC88E005EE0BE /* Resources */,
 			);
-			path = RandomFoto;
+			path = RandomPhoto;
 			sourceTree = "<group>";
 		};
 		50C61D2C297FC874005EE0BE /* Sources */ = {
@@ -283,7 +285,7 @@
 		68F3524A3E5AF481DA0A821B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09E1AF7AB60DEB62DE0E830A /* Pods_RandomFoto.framework */,
+				0870B771FD167EFBFF0C87BB /* Pods_RandomPhoto.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -293,6 +295,8 @@
 			children = (
 				DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */,
 				B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */,
+				FADB883D00979D572712B3A6 /* Pods-RandomPhoto.debug.xcconfig */,
+				0E4936D68396E5D91C2238CF /* Pods-RandomPhoto.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -371,15 +375,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RandomFoto/Pods-RandomFoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RandomFoto/Pods-RandomFoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomFoto/Pods-RandomFoto-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RandomPhoto/Pods-RandomPhoto-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7556CC2AF84CF74302A8A06E /* [CP] Check Pods Manifest.lock */ = {
@@ -397,7 +401,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RandomFoto-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RandomPhoto-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -558,14 +562,14 @@
 		};
 		50C61D2A297FC7CF005EE0BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE3BEDA0BEA16553201F0046 /* Pods-RandomFoto.debug.xcconfig */;
+			baseConfigurationReference = FADB883D00979D572712B3A6 /* Pods-RandomPhoto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomFoto/Resources/Info.plist;
+				INFOPLIST_FILE = RandomPhoto/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -585,14 +589,14 @@
 		};
 		50C61D2B297FC7CF005EE0BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3FAFC7DD0B1692A9098A842 /* Pods-RandomFoto.release.xcconfig */;
+			baseConfigurationReference = 0E4936D68396E5D91C2238CF /* Pods-RandomPhoto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RandomFoto/Resources/Info.plist;
+				INFOPLIST_FILE = RandomPhoto/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
