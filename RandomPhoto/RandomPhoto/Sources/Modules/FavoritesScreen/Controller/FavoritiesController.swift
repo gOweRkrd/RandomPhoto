@@ -89,7 +89,9 @@ final class FavoritiesController: UICollectionViewController {
             let likesVC = navVC.topViewController as! FavoritiesController
 
             likesVC.photos.append(contentsOf: selectedPhotos ?? [])
+
             likesVC.collectionView.reloadData()
+
 
             self.refresh()
         }

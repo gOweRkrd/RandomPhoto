@@ -13,8 +13,6 @@
 		50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D1E297FC7CD005EE0BE /* RandomFoto.xcdatamodeld */; };
 		50C61D22297FC7CF005EE0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C61D21297FC7CF005EE0BE /* Assets.xcassets */; };
 		50C61D25297FC7CF005EE0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50C61D23297FC7CF005EE0BE /* LaunchScreen.storyboard */; };
-		50C61D46297FCCDF005EE0BE /* DeatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D45297FCCDF005EE0BE /* DeatailView.swift */; };
-		50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C61D47297FCD0C005EE0BE /* DetailController.swift */; };
 		50FBDB4C298127EF005EC3E6 /* UIKit + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4B298127EF005EC3E6 /* UIKit + Extension.swift */; };
 		50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */; };
 		50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */; };
@@ -36,8 +34,6 @@
 		50C61D21297FC7CF005EE0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50C61D24297FC7CF005EE0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50C61D26297FC7CF005EE0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		50C61D45297FCCDF005EE0BE /* DeatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeatailView.swift; sourceTree = "<group>"; };
-		50C61D47297FCD0C005EE0BE /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		50FBDB4B298127EF005EC3E6 /* UIKit + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit + Extension.swift"; sourceTree = "<group>"; };
 		50FBDB4D29812BD5005EC3E6 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		50FBDB4F29812BDB005EC3E6 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
@@ -142,7 +138,6 @@
 			children = (
 				50C61D2E297FC8B3005EE0BE /* MainScreen */,
 				50C61D3A297FCBAE005EE0BE /* FavoritesScreen */,
-				50C61D3E297FCC44005EE0BE /* DetailScreen */,
 				50FBDB4729812765005EC3E6 /* TabBar */,
 				50FBDB4A298127CD005EC3E6 /* Extensions */,
 			);
@@ -205,31 +200,6 @@
 			isa = PBXGroup;
 			children = (
 				50FBDB732982774F005EC3E6 /* FavoritiesController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		50C61D3E297FCC44005EE0BE /* DetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-				50C61D3F297FCC5E005EE0BE /* View */,
-				50C61D40297FCC63005EE0BE /* Controller */,
-			);
-			path = DetailScreen;
-			sourceTree = "<group>";
-		};
-		50C61D3F297FCC5E005EE0BE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				50C61D45297FCCDF005EE0BE /* DeatailView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		50C61D40297FCC63005EE0BE /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				50C61D47297FCD0C005EE0BE /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,14 +387,12 @@
 			files = (
 				50FBDB4C298127EF005EC3E6 /* UIKit + Extension.swift in Sources */,
 				50C61D20297FC7CD005EE0BE /* RandomFoto.xcdatamodeld in Sources */,
-				50C61D46297FCCDF005EE0BE /* DeatailView.swift in Sources */,
 				50FBDB5329812C0E005EC3E6 /* SearchResults.swift in Sources */,
 				50FBDB4E29812BD5005EC3E6 /* NetworkService.swift in Sources */,
 				50FBDB5029812BDB005EC3E6 /* NetworkDataFetcher.swift in Sources */,
 				50C61D16297FC7CD005EE0BE /* AppDelegate.swift in Sources */,
 				50FBDB6D298276D7005EC3E6 /* CollectionViewCell.swift in Sources */,
 				50FBDB742982774F005EC3E6 /* FavoritiesController.swift in Sources */,
-				50C61D48297FCD0C005EE0BE /* DetailController.swift in Sources */,
 				50FBDB7629827763005EC3E6 /* MainTabBarController.swift in Sources */,
 				50FBDB702982771B005EC3E6 /* MainFotoController.swift in Sources */,
 				50FBDB722982773A005EC3E6 /* FavoritiesCollectionViewCell.swift in Sources */,
